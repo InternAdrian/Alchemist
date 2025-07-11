@@ -1,0 +1,306 @@
+/* General body styling */
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: linear-gradient(to bottom, #666, #333);
+  color: white;
+}
+
+/* Highlight active nav link */
+nav a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Header layout with logo and nav */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #2e2e2e;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #ccc;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 100px;
+}
+
+/* Navigation menu styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hero Section for Services Page */
+.hero-services {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/girlwipad.png') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-services h1 {
+  font-size: 3.5em;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-services p {
+  font-size: 1.2em;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+/* Service Categories Section */
+.service-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 60px 80px;
+  background-color: #444;
+}
+
+.category-card {
+  background-color: #2e2e2e;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.category-card img {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.category-card h2 {
+  font-size: 1.8em;
+  color: #c4ad50;
+  margin-bottom: 15px;
+}
+
+.category-card p {
+  font-size: 1em;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+/* Call to Action Section */
+.cta-section {
+  text-align: center;
+  padding: 60px 80px;
+  background: linear-gradient(to top, #666, #333);
+}
+
+.cta-section h2 {
+  font-size: 2.5em;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Footer styling (reused from aboutus.css) */
+footer {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+/* Footer content containers */
+.footer-left {
+  max-width: 400px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Contact Us button */
+.contact-btn {
+  background-color: #c4ad50;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  color: white; /* Ensure button text is white */
+}
+
+.contact-btn:hover {
+  background-color: #a8973d;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Footer bottom row */
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+.footer-bottom a {
+  color: #c4ad50;
+  text-decoration: none;
+}
+
+/* Animation keyframes (reused from aboutus.css) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation Classes (reused from aboutus.css) */
+.fade-in-up {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease forwards;
+  opacity: 0;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease forwards;
+  opacity: 0;
+}
+
+.fade-delay-1 {
+  animation-delay: 0.3s;
+}
+
+.fade-delay-2 {
+  animation-delay: 0.6s;
+}
+
+.fade-delay-3 {
+  animation-delay: 0.9s;
+}
+
+/* Ensure sections animate when scrolled into view (reused from aboutus.css) */
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animated {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .hero-services h1 {
+    font-size: 2.5em;
+  }
+
+  .hero-services p {
+    font-size: 1em;
+  }
+
+  .service-categories {
+    padding: 40px 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .cta-section {
+    padding: 40px 20px;
+  }
+
+  .cta-section h2 {
+    font-size: 1.8em;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-left, .footer-right {
+    max-width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    margin-top: 10px;
+  }
+}

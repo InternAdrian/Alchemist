@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Alchemist</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="css/aboutus.css">
+</head>
+<body>
+
+  <!-- Header Section with Logo and Navigation Menu -->
+  <header>
+    <div class="logo fade-in-up fade-delay-1">
+        <img src="img/alchemy.png" alt="Alchemy Logo" />
+        <span>ALCHEMY</span>
+    </div>
+    <nav class="fade-in-up fade-delay-2">
+      <ul>
+        <li><a href="landingpage.html">HOME</a></li>
+        <li><a href="aboutus.html" class="active">ABOUT</a></li>
+        <li><a href="service.html">SERVICES</a></li>
+        <li><a href="contactus.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Placeholder for a video presentation -->
+  <section class="video fade-in-up fade-delay-3">
+    <div class="video-box">
+      VIDEO PRESENTATION <!-- Suggest replacing with a real <video> element -->
+    </div>
+  </section>
+
+  <!-- Who We Are Section -->
+  <section class="who-we-are animate-on-scroll">
+    <h2>WHO WE ARE</h2>
+    <p>ALCHEMY'S MISSION IS TO USE A COMBINATION OF POWERFUL TICINOLOGY AND A HIGHLY SKILLED WORKFORCE TO CREATE A VIRTUAL EXTENSION VIRTUAL EXTENSION TO A VARIETY OF SERVICE-ORIENTED TEAMS PROVIDING HIGHLY SKILLED AND EXPERIENCED PERSONNEL THAT ASSIST IN ADMINISTRATION NEEDS THERERY INCREASING YOUR STATE CAPACITY, OPERATIONS AND EFFICIENCY</p>
+  </section>
+
+  <!-- Company History Section -->
+  <section class="our-history animate-on-scroll">
+    <h2>OUR HISTORY</h2>
+    <h3>PROVIDING THE BEST</h3>
+    <p>Alchemy was founded in 2008 by Marinez Burnett. Marinez is an RN, and her objective for Alchemy was to approach medical transcription with the same care and attention to detail as would be applied to an actual patient. Additional services such as virtual assistance and call center operations have been added in recent years.</p>
+    <p>Alchemy was founded on the principle that quality must be paramount to everything we do because our work directly impacts participants. We also know that the highest level of quality can only be achieved when the utmost attention to detall is applied In every step of the process, and the work is performed by people who have the training and experience to do things right. Because of this, all medical transcription work is performed by employees who have earned a Bachelor of Science degree in Nursing and are Board Licensed registered nurses. Alchemy is the only company in the world to hold a standard this high for its transcription staff</p>
+    <p>Over the years, Alchemy has evolved and expanded its services catering to a variety of service-oriented industries. Providing outsourcing needs in the medical, insurance, social media, media and contracting businesses.</p>
+  </section>
+
+  <!-- Footer with contact details and copyright -->
+  <footer class="animate-on-scroll">
+    <div class="footer-left">
+      <strong>CORPORATE OFFICE</strong><br>
+      5070 Ridge Way Suite 215, San Diego CA 92130<br><br>
+      CAMA Bldg., Gov. Lucero corner Ortega Hwy, Brgy. 4 City of San Fernando<br>
+      La Union Philippines
+    </div>
+    <div class="footer-right">
+      <a href="contactus.html">
+      <button class="contact-btn">CONTACT US</button></a>
+    </div>
+    <div class="footer-bottom">
+      Copyright © 2025 Alchemy Online Services |
+      Powered by Alchemy Online Services |
+      <a href="#">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+<script>
+  // Fade-in sections on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('animated');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+</script>
+
+</html>

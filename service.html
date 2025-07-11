@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Alchemy</title>
+  <link rel="stylesheet" href="css/service.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo fade-in-up fade-delay-1">
+        <img src="img/alchemy.png" alt="Alchemy Logo" />
+        <span>ALCHEMY</span>
+    </div>
+    <nav class="fade-in-up fade-delay-2">
+      <ul>
+        <li><a href="landingpage.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT</a></li>
+        <li><a href="service.html" class="active">SERVICES</a></li>
+        <li><a href="contactus.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-services fade-in-up fade-delay-3">
+    <h1>OUR SERVICES</h1>
+    <p>Empowering your business with expert virtual assistance and specialized outsourcing solutions.</p>
+  </section>
+
+  <section class="service-categories">
+    <div class="category-card animate-on-scroll slide-in-left">
+      <img src="img/medprac.jpg" alt="Medical Icon">
+      <h2>MEDICAL PRACTICE</h2>
+      <p>• Appointment confirmation.</p>
+      <P>• Patient chart preparation and documentation.</p>
+      <p>• Inbound patient calls and reviews of custom preventative care plans.</p>
+      <p>• Medical record data entry and/or management.</p>
+      <p>• Medical transcription.</p>
+    </div>
+    <div class="category-card animate-on-scroll fade-in-up">
+      <img src="img/billing.jpg" alt="Customer Service Icon">
+      <h2>BILLING AND CODING SERVICES</h2>
+      <p>• Ensures that all bills are submitted with the correct information.</p>
+      <p>• Medical Coding Services.</p>
+      <p>• Medical Claims Processing.</p>
+      <p>• Accounts Receivables Management.</p>
+      <p>• Revenue Cycle Management.</p>
+      <p>• Specialized Medical Billing.</p>
+    </div>
+    <div class="category-card animate-on-scroll slide-in-right">
+      <img src="img/propertymanage.jpg" alt="Property Management Icon">
+      <h2>PROPERTY MANAGEMENT TEAM</h2>
+      <p>• Manage client’s property software system.</p>
+      <p>• Coordinate and manage property or unit maintenance i.e. security, cleanliness, guest accommodation issues and/or damages.</p>
+      <p>• Guest credit card transaction processing, refunding and/or resolutions.</p>
+      <p>• Administrative tasks.</p>
+    </div>
+    <div class="category-card animate-on-scroll slide-in-left">
+      <img src="img/insurance.jpg" alt="Insurance Icon">
+      <h2>INSURANCE AGENCY SUPPORT</h2>
+      <p>• Oversee and maintain customer relationship management systems.</p>
+      <p>• Organization, documentation and processing of insurance policy applications.</p>
+      <p>• Organization, documentation and processing of insurance policy applications.</p>
+      <p>• Medical exam scheduling for insurance policy holders or applicants.</p>
+      <p>• Medical exam scheduling for insurance policy holders or applicants.</p>
+      <p>• Administrative tasks.</p>
+    </div>
+  </section>
+
+  <section class="cta-section animate-on-scroll">
+    <h2>READY TO OPTIMIZE YOUR OPERATIONS?</h2>
+    <a href="contactus.html">
+    <button class="contact-btn">GET IN TOUCH</button></a>
+  </section>
+
+  <footer class="animate-on-scroll">
+    <div class="footer-left">
+      <strong>CORPORATE OFFICE</strong><br>
+      5070 Ridge Way Suite 215, San Diego CA 92130<br><br>
+      CAMA Bldg., Gov. Lucero corner Ortega Hwy, Brgy. 4 City of San Fernando<br>
+      La Union Philippines
+    </div>
+    <div class="footer-right">
+        <a href="contactus.html">
+      <button class="contact-btn">CONTACT US</button></a>
+    </div>
+    <div class="footer-bottom">
+      Copyright © 2025 Alchemy Online Services |
+      Powered by Alchemy Online Services |
+      <a href="#">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('animated');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

@@ -1,0 +1,365 @@
+/* General body styling (reused from other pages) */
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: linear-gradient(to bottom, #666, #333);
+  color: white;
+}
+
+/* Highlight active nav link (reused) */
+nav a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Header layout with logo and nav (reused) */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #2e2e2e;
+}
+
+/* Logo styling (reused) */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #ccc;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 100px;
+}
+
+/* Navigation menu styling (reused) */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Hero Section for Contact Page */
+.hero-contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/businessman.png') no-repeat center center/cover;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-contact h1 {
+  font-size: 3.2em;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-contact p {
+  font-size: 1.1em;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+/* Contact Content Section */
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 80px;
+  background-color: #444;
+}
+
+.contact-info,
+.contact-form-container {
+  background-color: #2e2e2e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.contact-info h2,
+.contact-form-container h2 {
+  font-size: 1.8em;
+  color: #c4ad50;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.contact-info p {
+  font-size: 1em;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.contact-info strong {
+  color: #fff;
+}
+
+/* Social Media Icons */
+.social-media {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icon img {
+  height: 35px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
+}
+
+/* Contact Form Styling */
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #3a3a3a;
+  color: white;
+  font-size: 1em;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #c4ad50;
+  box-shadow: 0 0 5px rgba(196, 173, 80, 0.5);
+}
+
+.contact-form textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.submit-btn {
+  background-color: #c4ad50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: block;
+  width: 100%;
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background-color: #a8973d;
+  transform: scale(1.02);
+}
+
+/* Footer styling (reused from other pages) */
+footer {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.footer-left {
+  max-width: 400px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.contact-btn { /* Reused from other pages, but ensure it's styled for footer */
+  background-color: #c4ad50;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  color: white;
+}
+
+.contact-btn:hover {
+  background-color: #a8973d;
+  transform: scale(1.05);
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+.footer-bottom a {
+  color: #c4ad50;
+  text-decoration: none;
+}
+
+/* Animation keyframes (reused) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation Classes (reused) */
+.fade-in-up {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease forwards;
+  opacity: 0;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease forwards;
+  opacity: 0;
+}
+
+.fade-delay-1 {
+  animation-delay: 0.3s;
+}
+
+.fade-delay-2 {
+  animation-delay: 0.6s;
+}
+
+.fade-delay-3 {
+  animation-delay: 0.9s;
+}
+
+/* Ensure sections animate when scrolled into view (reused) */
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animated {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .hero-contact h1 {
+    font-size: 2.5em;
+  }
+
+  .hero-contact p {
+    font-size: 1em;
+  }
+
+  .contact-content {
+    padding: 40px 20px;
+    flex-direction: column; /* Stack contact info and form vertically */
+  }
+
+  .contact-info,
+  .contact-form-container {
+    max-width: 100%; /* Allow them to take full width */
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-left, .footer-right {
+    max-width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    margin-top: 10px;
+  }
+}
